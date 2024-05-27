@@ -1,0 +1,127 @@
+.main-header{
+    background-image: linear-gradient(to right, rgb(210, 0, 98), rgb(214, 88, 159));
+    padding-left: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+}
+
+.header-info{
+    text-align: left;
+    color: snow;
+    padding: 0px;
+    margin: 14px;
+    position: absolute;
+    left: 0px;
+}
+
+.header-info a {
+    padding: 0;
+    text-decoration: none;
+}
+
+.header-info a:hover {
+    background-color: transparent;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+}
+
+/* .dropdown-content{
+    display: none;
+} */
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    position: absolute;
+    top: 100%;
+    background-color: lightskyblue;
+}
+
+.dropdown-item:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+a.dropdown-item{
+    min-width: 100px;
+    text-align: left;
+}
+
+li.dropdown-item:hover a.dropdown-item{
+    text-align: left;
+    color: gainsboro;
+}
+
+.dropdown-item{
+    color: black;
+}
+
+nav{
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: snow;
+    padding: 15px;
+    float: left;
+}
+.game-link{
+    padding: 0;
+}
+main {
+    margin-top: 60px;
+    }
+#jumbotron {
+    width: 100%;
+    z-index: 10;
+    }
+.jumbotron {
+    height: 600px;
+    text-align: center;
+    background-color: rgb(214, 88, 159);
+    }
+.header-flex {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    }
+.jumbotron-title {
+    color: snow;
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    }
+.jumbotron-text {
+    color: snow;
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 8px solid rgb(196, 228, 255);
+    }
+
+.jumbotron-img {
+    height: 300px;
+    }
+
+.mini-text-flex {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 20px;
+    }
+.mini-text {
+    color: rgb(224, 251, 252);
+    text-align: left;
+    margin-right: 5px;
+    }
+.wave{
+    position: absolute;
+    top: 400px;
+    /* z-index: 0; */
+}
