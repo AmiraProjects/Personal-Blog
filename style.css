@@ -1,127 +1,195 @@
-.main-header{
-    background-image: linear-gradient(to right, rgb(210, 0, 98), rgb(214, 88, 159));
-    padding-left: 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
+.main-header {
+  background-image: linear-gradient(
+    to right,
+    rgb(210, 0, 98),
+    rgb(214, 88, 159)
+  );
+  padding-left: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
 }
 
-.header-info{
-    text-align: left;
-    color: snow;
-    padding: 0px;
-    margin: 14px;
-    position: absolute;
-    left: 0px;
+.header-info {
+  text-align: left;
+  color: snow;
+  padding: 0px;
+  margin: 14px;
+  position: absolute;
+  left: 0px;
+  font-family: "Edu TAS Beginner", cursive;
 }
 
 .header-info a {
-    padding: 0;
-    text-decoration: none;
+  padding: 0;
+  text-decoration: none;
 }
 
 .header-info a:hover {
-    background-color: transparent;
+  background-color: transparent;
 }
 
-.dropdown{
-    display: flex;
-    flex-direction: column;
+.dropdown {
+  display: flex;
+  flex-direction: column;
 }
 
-/* .dropdown-content{
-    display: none;
-} */
-
-.dropdown:hover .dropdown-content{
-    display: block;
-    position: absolute;
-    top: 100%;
-    background-color: lightskyblue;
+.dropdown-content {
+  display: none;
 }
 
-.dropdown-item:hover{
-    background-color: whitesmoke;
-    cursor: pointer;
+.dropdown:hover .dropdown-content {
+  display: block;
+  position: absolute;
+  top: 100%;
+  background-color: rgb(210, 0, 98);
 }
 
-a.dropdown-item{
-    min-width: 100px;
-    text-align: left;
+.dropdown-item:hover {
+  background-color: rgb(216, 149, 218);
+  cursor: pointer;
 }
 
-li.dropdown-item:hover a.dropdown-item{
-    text-align: left;
-    color: gainsboro;
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.dropdown-item{
-    color: black;
+a.dropdown-item {
+  min-width: 100px;
+  text-align: left;
 }
 
-nav{
-    position: absolute;
-    right: 0;
-    display: flex;
+li.dropdown-item:hover a.dropdown-item {
+  text-align: left;
+  color: black;
+}
+
+.dropdown-item {
+  color: snow;
+}
+
+nav {
+  position: absolute;
+  right: 0;
+  display: flex;
 }
 
 a{
-    text-decoration: none;
-    color: snow;
-    padding: 15px;
-    float: left;
+  text-decoration: none;
+  color: snow;
+  padding: 15px;
+  float: right;
 }
-.game-link{
-    padding: 0;
+.game-link {
+  padding: 0;
+  color: darkblue;
+  float: left;
 }
 main {
-    margin-top: 60px;
-    }
+  margin-top: 60px;
+}
 #jumbotron {
-    width: 100%;
-    z-index: 10;
-    }
+  width: 100%;
+  z-index: 10;
+}
 .jumbotron {
-    height: 600px;
-    text-align: center;
-    background-color: rgb(214, 88, 159);
-    }
+  height: 600px;
+  text-align: center;
+  background-color: rgb(214, 88, 159);
+}
 .header-flex {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-    }
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
 .jumbotron-title {
-    color: snow;
-    font-size: 30px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    }
+  color: snow;
+  font-size: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-family: "Sevillana", cursive;
+}
 .jumbotron-text {
-    color: snow;
-    text-align: left;
-    padding-bottom: 20px;
-    border-bottom: 8px solid rgb(196, 228, 255);
-    }
+  color: snow;
+  text-align: left;
+  padding: 20px;
+  border-bottom: 8px solid rgb(196, 228, 255);
+  font-family: "Edu TAS Beginner", cursive;
+}
 
 .jumbotron-img {
-    height: 300px;
-    }
+  height: 350px;
+  padding: 20px;
+}
 
 .mini-text-flex {
-    display: flex;
-    justify-content: flex-start;
-    padding: 0 20px;
-    }
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 20px;
+}
 .mini-text {
-    color: rgb(224, 251, 252);
-    text-align: left;
-    margin-right: 5px;
-    }
-.wave{
-    position: absolute;
-    top: 400px;
-    /* z-index: 0; */
+  color: rgb(224, 251, 252);
+  text-align: left;
+  margin-right: 5px;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: larger;
+  font-weight: bold;
+}
+.wave {
+  position: absolute;
+  top: 400px;
+  /* z-index: 0; */
+}
+.wave1 {
+  position: absolute;
+  top: 450px;
+  /* z-index: 0; */
+}
+.article {
+  margin: 50px 30px 100px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(214, 88, 159);
+  box-shadow: 2px 2px 5px rgb(196, 228, 255);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.article-img {
+  margin: 10px;
+}
+.article-img img {
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
+.description {
+  margin: 5px;
+}
+.description h3 {
+  margin: 0 5px 5px;
+  padding: 10px;
+  font-size: 23px;
+  color: snow;
+  border-bottom: 8px solid rgb(196, 228, 255);
+  border-radius: 10px;
+}
+.description p {
+  margin: 20px 5px;
+  padding: 0;
+  line-height: 1.8;
+  text-indent: 40px;
+  color: snow;
+}
+.submit{
+  border-style: none;
+  border-radius: 25px;
+  background-color: rgb(196, 228, 255);
+  margin: 10px;
+  cursor: pointer;
+  color: darkblue;
 }

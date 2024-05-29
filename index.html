@@ -7,22 +7,25 @@
 
     <script src="https://kit.fontawesome.com/f90068558c.js" crossorigin=”anonymous”></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Nanum+Pen+Script&family=Sevillana&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="main-header">
             <h3 class="header-info">
-                <a href="index.html"><i></i>Me, Amira!</a>
+                <a href="index.html">Me, Amira!</a>
             </h3>
             <nav>
                 <div class="dropdown">
+                        <div>
+                            <a href="index.html">Home</a>
+                        </div>
                     <div class="dropdown-content">
-                        <a href="index.html">Home</a>
-                        <!-- <ul>
-                            <li class="dropdown-item">Projects</li>
-                            <li class="dropdown-item">My Thoughts</li>
-                            <li class="dropdown-item">Short Story</li>
-                        </ul> -->
+                        <ul>
+                            <li class="dropdown-item"><a href="#projects" class="dropdown-item">Projects</a></li>
+                            <li class="dropdown-item"><a href="#thoughts" class="dropdown-item">My Thoughts</a></li>
+                            <li class="dropdown-item"><a href="#story" class="dropdown-item">Short Story</a></li>
+                        </ul>
                     </div>
                 </div>
                 <a href="contact.html">Contacts</a>
@@ -36,22 +39,24 @@
                 <h1 class="jumbotron-title">Most Viewed Content!</h1>
                 <div class="header-flex">
                     <div>
-                        <h2 class="jumbotron-text">The Glorious Of Math</h2>
+                        <h2 class="jumbotron-text">Food Fall</h2>
                         <div class="mini-text-flex">
                             <p class="mini-text">
-                                Hi guys! Finally! I can make a project with my friends, but this is just a prototype. 
-                                We collaborate for about 2 weeks. For me, the coding step took quiet a long time to finish because 
-                                I have to manage my time with school tasks and prepare for school exams. 
-                                Since I'm not really good at drawing, I told my friend Gadiza to draw the characters. 
-                                Nara create the questions by herself and Aisha search for the background on google with no copyright.
-                                Oh ya, this game can only be played on a computer or PC.
-                                If you're interested to see it, here's the link: <br>
-                                <span><a href="https://thegloriousofmath.netlify.app" target="_blank" class="game-link">The Glorious Of Math</a></span>
+                                This project will be the simplest one. 
+                                I made this just to relax and trying to memorize things I had learn from my coding course. 
+                                It's about catching healthy foods that was falling and let the unhealthy ones fall. 
+                                Thats why the title is Food Fall. 
+                                Oh ya, one more, if we catch a water bottle, it will add the health points. 
+                                It was pretty easy to make since it just took 3 days for me to finish and only consist of few codes & layouts. 
+                                I just have to find or draw many foods or drinks to be the sprites.
+
+                                This game can be played both on computer and phone but it's easier to play on phone rather than on a computer. <br>
+                                <a href="https://foodfall.netlify.app/" target="_blank" class="game-link">Food Fall</a>
                             </p>
                         </div>
                     </div>
                     <div>
-                        <img class="jumbotron-img" src="assets/math.JPG" alt="" width="auto" height="300">
+                        <img class="jumbotron-img" src="assets/Food fall.JPG" alt="" width="auto" height="300">
                     </div>
                 </div>
             </div>
@@ -62,8 +67,31 @@
             </path>
         </svg>
 
-        <section id="main-blog">
-            
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave1">
+            <path fill="#FFFFFF" fill-opacity="1" d="M0,96L80,117.3C160,139,320,181,480,170.7C640,160,800,96,960,96C1120,96,1280,160,1360,192L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+            </path>
+        </svg>
+        <section id="projects" style="background-image: url(assets/bg.png); background-size: cover;">
+            <article class="my-project reveal">
+                <div class="article">
+                    <div class="article-img">
+                        <img src="assets/math.JPG" alt="">
+                    </div>
+                    <div class="description">
+                        <h3>Projects -- The Glorious of Math</h3>
+                        <p>Hi guys!
+                        Finally! I can make a project with my friends, but this is just a prototype. 
+                        We collaborate for about 2 weeks. 
+                        For me, the coding step took quiet a long time to finish because I have to manage my time with school tasks and prepare for school exams. 
+                        Since I'm not really good at drawing, I told my friend Gadiza to draw the characters. 
+                        Nara create the questions by herself and Aisha search for the background on google with no copyright.
+                        If you're interested to see it, here's the link: <br>
+                        <input type="submit" value="The Glorious of Math" class="submit"><br>
+                        Oh ya, this game can only be played on a computer or PC.
+                        </p>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
     <footer>
