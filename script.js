@@ -21,3 +21,33 @@ buttons.forEach(function(btn, i){
         currentSlide=i;
     })
 })
+
+window.addEventListener("scroll", reveal);
+
+function reveal(){
+    var reveals = document.querySelectorAll(".reveal")
+
+    reveals.forEach(reveal => {
+        var windowHeight = window.innerHeight;
+        var revealTop = reveal.getBoundingClientRect().top;
+        var revealPoint = 40
+
+        if(revealTop < windowHeight - revealPoint){
+            reveal.classList.add("active")
+        }else{
+            reveal.classList.remove("active")
+        }
+    })
+}
+
+var btnSubmit = document.querySelector(".submit");
+var modal = document.querySelector(".modal-container");
+
+if(btnSubmit){
+    btnSubmit.addEventListener("click", function(){
+        modal.classList.add("show");
+
+        const next = document.querySelector(".next");
+        next.setAttribute("value", "https://personal-blog-amira.netlify.app/contact.html");
+    });
+}
