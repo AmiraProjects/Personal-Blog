@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Me, Amira!</title>
 
-    <script src="https://kit.fontawesome.com/f90068558c.js" crossorigin=”anonymous”></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/f90068558c.js" crossorigin=”anonymous”></script>
     <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Nanum+Pen+Script&family=Sevillana&family=Minive&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body style="background-image: url(assets/bg.png); background-size: cover;">
     <header>
         <div class="main-header">
             <h3 class="header-info">
+                <img src="assets/blogger.png">
                 <a href="index.html">Me, Amira!</a>
             </h3>
             <nav>
                 <div class="dropdown">
-                        <div>
+                        <div class="home-icon">
+                            <img src="assets/up-arrow.png" onmouseover="changeIcon(this)" onmouseout="changeIconBack(this)">
                             <a href="index.html">Home</a>
                         </div>
                     <div class="dropdown-content">
@@ -306,7 +310,7 @@
             </article>
         </section>
         <section id="story">
-            <article class="short-story">
+            <article class="short-story reveal">
                 <div class="article">
                     <div class="article-img">
                         <img src="assets/2.png" alt="">
@@ -403,7 +407,7 @@
                 </div>
             </article>
 
-            <article class="short-story">
+            <article class="short-story reveal">
                 <div class="article">
                     <div class="article-img">
                         <img src="assets/5.png" alt="">
@@ -479,18 +483,17 @@
     </main>
     <footer>
         <div class="main-footer">
-            <h3 class="info-top">Cobee The Junior Programmer</h3>
+            <h3 class="info-top">Me, Amira!</h3>
             <div class="social-media">
-                <i class="fab fa-instagram-square"></i>
-                <i class="fab fa-twitter-square"></i>
-                <i class="fab fa-facebook-square"></i>
-                <i class="fas fa-envelope"></i>
+                <a href="https://www.instagram.com/amira_b_aja/?hl=en" target="_blank" class="icons"><i class="fab fa-instagram-square"></i></a>
+                <a href="mailto:amira.n.rachman@gmail.com" target="_blank" class="icons"><i class="fas fa-envelope"></i></a>
             </div>
             <p class="info-center">
                 Copyright &copy; 2024. Amira. All Rights Reserved.
             </p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

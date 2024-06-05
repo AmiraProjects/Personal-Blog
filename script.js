@@ -51,3 +51,22 @@ if(btnSubmit){
         next.setAttribute("value", "https://personal-blog-amira.netlify.app/contact.html");
     });
 }
+
+function changeIcon(element){
+    element.setAttribute("src", "assets/arrow-down.png")
+}
+
+function changeIconBack(element){
+    element.setAttribute("src", "assets/up-arrow.png")
+}
+
+var codingProjects = document.querySelectorAll(".reveal");
+codingProjects.forEach((project, index) => {
+    project.dataset.aos = "fade-down";
+    project.dataset.aosDuration = 1500;
+    project.dataset.aosDelay = index * 100;
+})
+
+AOS.init({
+    once: true
+});

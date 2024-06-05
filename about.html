@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Me, Amira!</title>
 
-    <script src="https://kit.fontawesome.com/f90068558c.js" crossorigin=”anonymous”></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/f90068558c.js" crossorigin=”anonymous”></script>
     <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Nanum+Pen+Script&family=Sevillana&family=Minive&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <header>
@@ -17,9 +19,10 @@
             </h3>
             <nav>
                 <div class="dropdown">
-                        <div>
-                            <a href="index.html">Home</a>
-                        </div>
+                    <div class="home-icon">
+                        <img src="assets/up-arrow.png" onmouseover="changeIcon(this)" onmouseout="changeIconBack(this)">
+                        <a href="index.html">Home</a>
+                    </div>
                     <div class="dropdown-content">
                         <ul>
                             <li class="dropdown-item"><a href="#projects" class="dropdown-item">Projects</a></li>
@@ -56,17 +59,17 @@
     </main>
     <footer>
         <div class="main-footer">
-            <h3 class="info-top">Cobee The Junior Programmer</h3>
+            <h3 class="info-top">Me, Amira!</h3>
             <div class="social-media">
-                <i class="fab fa-instagram-square"></i>
-                <i class="fab fa-twitter-square"></i>
-                <i class="fab fa-facebook-square"></i>
-                <i class="fas fa-envelope"></i>
+                <a href="https://www.instagram.com/amira_b_aja/?hl=en" target="_blank" class="icons"><i class="fab fa-instagram-square"></i></a>
+                <a href="mailto:amira.n.rachman@gmail.com" target="_blank" class="icons"><i class="fas fa-envelope"></i></a>
             </div>
             <p class="info-center">
                 Copyright &copy; 2024. Amira. All Rights Reserved.
             </p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
