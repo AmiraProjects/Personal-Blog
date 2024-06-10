@@ -22,7 +22,7 @@
   left: 0px;
   font-family: "Edu TAS Beginner", cursive;
 }
-.header-info img{
+.header-info img {
   width: 25px;
   padding-right: 10px;
 }
@@ -39,7 +39,7 @@
   display: flex;
   flex-direction: column;
 }
-.home-icon img{
+.home-icon img {
   width: 16px;
   padding-top: 15px;
 }
@@ -85,7 +85,7 @@ nav {
   display: flex;
 }
 
-a{
+a {
   text-decoration: none;
   color: snow;
   padding: 15px;
@@ -107,7 +107,7 @@ main {
   height: 600px;
   text-align: center;
   background-color: rgb(214, 88, 159);
-  width: 1207px;
+  /* width: 1207px; */
 }
 .header-flex {
   display: flex;
@@ -190,36 +190,36 @@ main {
   font-weight: bold;
   text-align: center;
 }
-.image-slider{
+.image-slider {
   position: relative;
   width: 1300px;
   height: 200px;
   z-index: 10;
 }
-.slide{
+.slide {
   width: 100%;
   position: absolute;
   clip-path: circle(0% at 0 50%);
 }
-.slide img{
+.slide img {
   width: 100%;
 }
-.slide.active{
+.slide.active {
   clip-path: circle(150% at 0 50%);
   transition: 2s;
   transition-property: clip-path;
 }
-.slider-btn.active{
+.slider-btn.active {
   background-color: darkblue;
 }
-.navigation{
+.navigation {
   position: absolute;
   display: flex;
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
 }
-.slider-btn{
+.slider-btn {
   background-color: rgb(196, 228, 255);
   width: 10px;
   height: 10px;
@@ -227,7 +227,7 @@ main {
   cursor: pointer;
   margin: 0 5px;
 }
-.invest{
+.invest {
   list-style-type: square;
   padding-left: 20px;
   color: darkblue;
@@ -235,97 +235,104 @@ main {
   font-size: larger;
   font-weight: bold;
 }
-.article-img{
+.article-img {
   margin: 5px;
 }
-.article-img img{
+.article-img img {
   width: 300px;
   height: auto;
   border-radius: 5px;
   padding-top: 50px;
 }
-.stock-image{
+.stock-image {
   width: 300px;
   height: auto;
 }
-footer{
+footer {
   background-color: rgb(210, 0, 98);
 }
-.center-footer{
-  margin: 0 20px
+.center-footer {
+  margin: 0 20px;
 }
-.main-footer{
+.main-footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
   margin: 0;
 }
-.info-top{
+.info-top {
   text-align: center;
   width: 100%;
   padding-top: 5px;
   border-top: 1px solid white;
   color: white;
 }
-.info-center{
+.info-center {
   text-align: center;
   width: 100%;
   padding-top: 5px;
   border-top: 1px solid white;
   color: white;
 }
-.social-media{
+.social-media {
   display: flex;
   justify-content: center;
 }
-.icons{
+.icons {
   padding: 5px;
   font-size: 30px;
   color: white;
   text-align: center;
 }
-.contact-container{
+.contact-container {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
 }
-.illustration-img{
+.illustration-img {
   margin: 0;
-  width: 700px;
+  /* flex: 50%; */
 }
-.contact{
+.contact {
   display: inline-block;
   margin: 10px 30px;
   text-align: center;
+  /* flex: 50%; */
 }
-.contact h1{
+.contact h1 {
   font-family: "Edu TAS Beginner", cursive;
 }
-.profile-contact-img{
+.profile-contact-img {
   width: 100px;
 }
-.form-container{
+.form-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex: 50%;
 }
-.input-container{
+.input-container {
   display: flex;
   /* justify-content: center; */
   align-items: flex-start;
 }
-.icon{
+.icon {
   margin-right: 6px;
 }
-.fa-user, .fa-map-marker-alt, .fa-envelope-open, .fa-comment {
+.fa-user,
+.fa-map-marker-alt,
+.fa-envelope-open,
+.fa-comment {
   font-size: 27px;
 }
-.form-label{
+.form-label {
   position: absolute;
   left: 10px;
   top: 10px;
 }
-.form-input{
+.form-input {
   position: relative;
   width: 100%;
   border-bottom: 1px solid gray;
@@ -335,7 +342,7 @@ footer{
   padding: 0;
   margin-left: 50px;
 }
-.input-item{
+.input-item {
   position: absolute;
   top: 0;
   left: 0;
@@ -347,20 +354,20 @@ footer{
   font-size: 15px;
   height: 100%;
 }
-.textarea-container{
+.textarea-container {
   display: flex;
   justify-content: center;
 }
-.form-textarea{
+.form-textarea {
   position: relative;
 }
-textarea{
+textarea {
   border-style: none;
   border-bottom: 1px solid gray;
   outline: none;
   margin-top: 10px;
 }
-.submit{
+.submit {
   border-style: none;
   border-radius: 25px;
   background-color: rgb(214, 88, 159);
@@ -371,29 +378,29 @@ textarea{
   font-size: larger;
   width: 150px;
 }
-.input-item:focus + .form-label{
+.input-item:focus + .form-label {
   top: -5px;
   left: -2px;
   font-size: 10px;
 }
-textarea:focus + .form-label{
+textarea:focus + .form-label {
   top: -5px;
   left: -2px;
   font-size: 10px;
 }
-.input-item:not(:placeholder-shown).input-item:not(:focus) + .form-label{
+.input-item:not(:placeholder-shown).input-item:not(:focus) + .form-label {
   top: -2px;
   left: -2px;
   font-size: 10px;
   color: black;
 }
-.textarea:not(:placeholder-shown).textarea:not(:focus) + .form-label{
+.textarea:not(:placeholder-shown).textarea:not(:focus) + .form-label {
   top: -2px;
   left: -2px;
   font-size: 10px;
   color: black;
 }
-.modal{
+.modal {
   width: 600px;
   height: 400px;
   position: relative;
@@ -405,26 +412,26 @@ textarea:focus + .form-label{
   align-items: center;
   flex-direction: column;
 }
-.modal h3{
+.modal h3 {
   margin: 0;
   padding: 10px;
   font-size: 30px;
   font-family: "Sevillana", cursive;
   color: snow;
 }
-.modal p{
+.modal p {
   margin: 20px 0;
   padding: 0;
   font-size: 15px;
   color: snow;
 }
-.modal img{
+.modal img {
   display: block;
   margin: 0 auto 0 auto;
   padding: 0;
   width: 300px;
 }
-.modal-container{
+.modal-container {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -438,38 +445,30 @@ textarea:focus + .form-label{
   opacity: 0;
   transition: visibility 1s, opacity 1s;
 }
-.show{
+.show {
   visibility: visible;
   opacity: 1;
 }
-.section-container{
+.section-container {
   text-align: center;
   padding: 10px;
 }
-.section-title{
+.section-title {
   font-size: 40px;
   margin: 50px 0 0;
   font-family: "Sevillana", cursive;
 }
-.about-flex-item{
+.about-flex-item {
   display: block;
 }
-.about-image{
+.about-image {
   margin: 0;
 }
-.blob-image{
-  width: 400px;
+.profile-pic {
+  width: 30%;
   height: auto;
-  transform: rotate(-90deg);
 }
-.blogger-image{
-  position: absolute;
-  width: 200px;
-  height: auto;
-  left: 510px;
-  top: 270px;
-}
-.about-description p{
+.about-description p {
   width: 60%;
   display: block;
   margin-left: auto;
@@ -480,17 +479,27 @@ textarea:focus + .form-label{
   font-weight: bold;
   opacity: 1;
 }
-.about-description h4{
+.about-description h4 {
   color: black;
   letter-spacing: 2px;
   font-family: "Edu TAS Beginner", cursive;
 }
-.about-description{
-  background-image: linear-gradient(
-    to bottom,
-    rgb(196, 228, 255),
-    skyblue
-  );
+.about-description {
+  background-image: linear-gradient(to bottom, rgb(196, 228, 255), skyblue);
   display: inline-block;
-  opacity: 0.5;
+  opacity: 0.7;
+}
+.details-link {
+  text-decoration: none;
+  color: darkblue;
+  float: left;
+}
+@media (max-width: 100px) {
+  * {
+    font-size: 2.5vw;
+  }
+  .illustration-img,
+  .contact {
+    flex: 100%;
+  }
 }
