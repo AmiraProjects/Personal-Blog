@@ -1,3 +1,8 @@
+* {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .main-header {
   background-image: linear-gradient(
     to right,
@@ -42,6 +47,7 @@
 .home-icon img {
   width: 16px;
   padding-top: 15px;
+  margin-left: -5px;
 }
 .dropdown-content {
   display: none;
@@ -92,9 +98,18 @@ a {
   float: right;
 }
 .game-link {
-  padding: 0;
+  padding: 5px;
   color: darkblue;
   float: left;
+  background-color: rgb(196, 228, 255);
+  font-size: larger;
+  box-shadow: 2px 2px 5px gainsboro;
+  text-align: center;
+  border-style: none;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
 }
 main {
   margin-top: 60px;
@@ -102,6 +117,8 @@ main {
 #jumbotron {
   width: 100%;
   z-index: 10;
+  display: flex;
+  flex-direction: row;
 }
 .jumbotron {
   height: 600px;
@@ -288,7 +305,7 @@ footer {
 .contact-container {
   display: flex;
   justify-content: flex-start;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   text-align: center;
 }
 .illustration-img {
@@ -311,11 +328,11 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  flex: 50%;
+  /* flex: 50%; */
 }
 .input-container {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: flex-start;
 }
 .icon {
@@ -467,6 +484,7 @@ textarea:focus + .form-label {
 .profile-pic {
   width: 30%;
   height: auto;
+  margin: -50px;
 }
 .about-description p {
   width: 60%;
@@ -480,26 +498,58 @@ textarea:focus + .form-label {
   opacity: 1;
 }
 .about-description h4 {
-  color: black;
+  color: snow;
   letter-spacing: 2px;
   font-family: "Edu TAS Beginner", cursive;
 }
 .about-description {
-  background-image: linear-gradient(to bottom, rgb(196, 228, 255), skyblue);
+  background-image: linear-gradient(
+    to bottom,
+    rgb(203, 15, 203),
+    rgb(233, 87, 233)
+  );
   display: inline-block;
   opacity: 0.7;
+  color: snow;
 }
 .details-link {
-  text-decoration: none;
+  padding: 5px;
   color: darkblue;
   float: left;
+  background-color: rgb(196, 228, 255);
+  font-size: larger;
+  box-shadow: 2px 2px 5px gainsboro;
+  text-align: center;
+  border-style: none;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
 }
-@media (max-width: 100px) {
+@media screen and (max-width: 600px) {
   * {
-    font-size: 2.5vw;
+    font-size: small;
   }
-  .illustration-img,
+  /* .illustration-img,
   .contact {
     flex: 100%;
+  } */
+  #jumbotron {
+    flex-direction: column;
+  }
+  img {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 600px) {
+  * {
+    font-size: large;
+  }
+  /* .illustration-img,
+  .contact {
+    flex: 100%;
+  } */
+  #jumbotron {
+    flex-direction: row;
   }
 }
